@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <video id="sample" src="./audios/Audio_OGG-1.ogg"  hidden></video>
+
+    <main>
+        <h1>Test 4</h1>
+    <p> 🎧 Put on your headphones and click on the <b>Play sound</b> button to play a sample sound.</p>
+    
+        <input class="boton" id="boton-sample"  type="button" value=" Play sound " onclick="">
+        <p></p>
+    
+        <p> ⚠️ <b> Remember </b> you will not be able to pause the audio.</p>
+
+
+    <a href="../test4/audio.html">
+        <input class="boton" type="button" value=" Continue " onclick="">
+        <p></p>
+    </a>
+    <script> 
+        function iniciar() { 
+        var boton=document.getElementById('boton-sample'); 
+        boton.addEventListener('click', presionar, false); 
+        } 
+        function presionar() { 
+        var video=document.getElementById('sample'); 
+        video.play(); 
+        } 
+        window.addEventListener('load', iniciar, false); 
+        </script> 
+
+
+</main>
+
+<div class="instructions">
+<p class="titulo"> <b> INSTRUCTIONS</b></p>
+<ul>
+    <li><p>Time: approximately 18 minutes.</p> </li>
+    <li><p>There are 3 sections to this test.</p></li>
+    <li><p>You will hear recording section 1 just <b>once </b> and section 2 and 3 <b>twice</b>.</p> </li>
+    <li><p>For each part of the test there will be time for you to look through the questions and time for you to check your answers.</p></li>
+
+</ul>
+</div>
+
+</body>
+</html>
